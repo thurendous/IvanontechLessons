@@ -32,6 +32,7 @@ contract Wallet {
         for (uint256 i = 0; i < owners.length; i++) {
             if (msg.sender == owners[i]) {
                 owner = true;
+                break;
             }
         }
         require(owner);
