@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>Document</title>
+</head>
+    <table>
+        <thaed>
+            <th>Name</th>
+            <th>Ticker</th>
+            <th>Price</th>
+        </thaed>
+        <tbody id="root"></tbody>
+    </table>
+    <script type="text/babel">
+
+    const Coin = ({name, ticker, price}) => (
+                    <tr>
+                        <td>{name}</td>
+                        <td>{ticker}</td>
+                        <td>{price}</td>
+                    </tr>
+    );
+
+        
+        // class Coin extends React.Component {
+            /*
+            constructor(props) {
+                super(props);
+            }
+            */
+
+            /*
+           render() {
+               return (
+                   <> 
+                    <tr>
+                        <td>{this.props.name}</td>
+                        <td>{this.props.ticker}</td>
+                        <td>{this.props.price}</td>
+                    </tr>
+                   </>
+               );
+           }
+        }
+        */
+
+        ReactDOM.render(
+            <React.Fragment>
+                <Coin name="Bitcoin" ticker="BTC" price="$100,000"/>
+                <Coin name="Ethereum" ticker="ETH" price="$2999"/>
+            </React.Fragment>,
+            document.getElementById("root")
+        );
+
+    </script>
+<body>
+</body>
+</html>
