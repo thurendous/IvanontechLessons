@@ -2,6 +2,7 @@ import "./App.css";
 import React, { Component } from "react";
 import Coin from "./components/Coin/Coin";
 import logo from "./logo.svg";
+import AccountBalance from "./components/AccountBalance/AccountBalance";
 
 // export default class App extends Component {
 //   render() {
@@ -22,6 +23,7 @@ function App() {
         <img src={logo} alt="logo" className="App-logo" />
         <h1>Coin Exchange</h1>
       </header>
+      <AccountBalance amount={1000} />
       <table className="cointable">
         <thead>
           <tr>
