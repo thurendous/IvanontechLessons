@@ -1,8 +1,10 @@
-import "./App.css";
 import React, { Component } from "react";
-import Coin from "./components/Coin/Coin";
-import logo from "./logo.svg";
+import CoinList from "./components/CoinList/CoinList";
 import AccountBalance from "./components/AccountBalance/AccountBalance";
+import Header from "./components/Header";
+import styled from "styled-components";
+
+// you can import uuid to use as an id
 
 // export default class App extends Component {
 //   render() {
@@ -16,31 +18,60 @@ import AccountBalance from "./components/AccountBalance/AccountBalance";
 //   }
 // }
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} alt="logo" className="App-logo" />
-        <h1>Coin Exchange</h1>
-      </header>
-      <AccountBalance amount={1000} />
-      <table className="cointable">
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Ticker</th>
-            <th>Price</th>
-          </tr>
-        </thead>
-        <tbody>
-          <Coin name="Bitcoin" ticker="BTC" price={9999.99} />
-          <Coin name="Ethereum" ticker="ETH" price={3400.99} />
-          <Coin name="Tether" ticker="ETH" price={299.99} />
-          <Coin name="Ripple" ticker="XRP" price={0.1} />
-        </tbody>
-      </table>
-    </div>
-  );
+const Div = styled.div`
+  text-align: center;
+  background: rgb(20, 56, 97);
+  color: #ccc;
+`;
+
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      balance: 1000,
+      coinData: [
+        {
+          name: "Bitcoin",
+          ticker: "BTC",
+          price: 100000,
+        },
+        {
+          name: "Ethereum",
+          ticker: "ETH",
+          price: 15000,
+        },
+        {
+          name: "Tether",
+          ticker: "USDT",
+          price: 1,
+        },
+        {
+          name: "Ripple",
+          ticker: "XRP",
+          price: 1.5,
+        },
+        {
+          name: "Bitcoin cash",
+          ticker: "BCH",
+          price: 899.9,
+        },
+        {
+          name: "Ethereum",
+          ticker: "ETC",
+          price: 1000,
+        },
+      ],
+    };
+  }
+  render() {
+    return (
+      <Div className="App">
+        <Header />
+        <AccountBalance amount={this.state.balance} />
+        <CoinList coinData={this.state.coinData} />
+      </Div>
+    );
+  }
 }
 
 export default App;
