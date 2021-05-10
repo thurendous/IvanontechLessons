@@ -37,12 +37,13 @@ export default class Coin extends Component {
     */
     handleClick(event) {
         event.preventDefault();
-        const randomPercentage = 0.995 + Math.random() * 0.01;
-        this.setState(function(oldState) {
-            return {
-                price: oldState.price * randomPercentage
-            };
-        });
+        this.props.handleRefresh(this.props.ticker);
+        // const randomPercentage = 0.995 + Math.random() * 0.01;
+        // this.setState(function(oldState) {
+        //     return {
+        //         price: oldState.price * randomPercentage
+            // };
+        // });
         // prevent the default action of submitting the form
     }
 
@@ -51,7 +52,7 @@ export default class Coin extends Component {
                 <tr>
                     <Td>{this.props.name}</Td>
                     <Td>{this.props.ticker}</Td>
-                    <Td>${this.state.price}</Td>
+                    <Td>${this.props.price}</Td>
                     <Td>
                         <form action="#" method="POST">
                             <button onClick={this.handleClick}>Refresh</button>
