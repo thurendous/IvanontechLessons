@@ -7,14 +7,12 @@ const Td = styled.td`
 border: 1px solid #ccc;
 width: 25vh;
 color: #ccc;
+text-align: left;
 `
 
 export default class Coin extends Component {
     constructor(props) {
         super(props);
-        this.state = {
-            price: this.props.price,
-        }
         this.handleClick = this.handleClick.bind(this);
     }
 
@@ -53,6 +51,7 @@ export default class Coin extends Component {
                     <Td>{this.props.name}</Td>
                     <Td>{this.props.ticker}</Td>
                     <Td>${this.props.price}</Td>
+                    <Td>{this.props.showBalance?this.props.balance: `****`}</Td>
                     <Td>
                         <form action="#" method="POST">
                             <button onClick={this.handleClick}>Refresh</button>
@@ -67,4 +66,5 @@ Coin.propTypes = {
     name: propTypes.string.isRequired,
     ticker: propTypes.string.isRequired,
     price: propTypes.number.isRequired,
+    balance: propTypes.number.isRequired,
 };
