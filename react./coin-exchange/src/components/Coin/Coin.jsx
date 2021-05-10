@@ -11,10 +11,10 @@ text-align: left;
 `
 
 export default class Coin extends Component {
-    constructor(props) {
-        super(props);
-        this.handleClick = this.handleClick.bind(this);
-    }
+    // constructor(props) {
+    //     super(props);
+        // this.handleClick = this.handleClick.bind(this);
+    // }
 
 
     /*
@@ -33,7 +33,7 @@ export default class Coin extends Component {
         setInterval( callback, 1000);
     }
     */
-    handleClick(event) {
+    handleClick = (event) => {
         event.preventDefault();
         this.props.handleRefresh(this.props.ticker);
         // const randomPercentage = 0.995 + Math.random() * 0.01;

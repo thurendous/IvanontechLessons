@@ -1,0 +1,102 @@
+commit 3403e804899c49b3eddaa5529fbb738430524ec9
+Author: thurendous <thurendous2@gmail.com>
+Date:   Mon May 10 13:02:29 2021 +0900
+
+    componentization and porp drilling
+
+commit 7a1219ccbf327cd14db2df9e2c531ddf88dc13b8
+Author: thurendous <thurendous2@gmail.com>
+Date:   Fri May 7 01:14:47 2021 +0900
+
+    componentization and porp drilling
+
+commit 57343094dd4d84a7cc5a1865d291cc867fcb2ef7
+Author: thurendous <thurendous2@gmail.com>
+Date:   Wed May 5 22:15:03 2021 +0900
+
+    update: added 'sytled'
+
+commit d1ab87fb6839d78b0650b3f759af1d028e22f71b
+Author: thurendous <thurendous2@gmail.com>
+Date:   Wed May 5 15:21:36 2021 +0900
+
+    first one in git lesson today
+
+commit 33de1f8d959b2c6b546026df8ff44e45610b12c1
+Author: thurendous <thurendous2@gmail.com>
+Date:   Sun Apr 4 14:43:20 2021 +0900
+
+    add: safemath, and ERC20 standard
+
+commit b16ff7e4889ca63e5d3b2cd86862bbf893587bb6
+Author: thurendous <thurendous2@gmail.com>
+Date:   Sun Apr 4 12:32:53 2021 +0900
+
+    add stuff 1
+
+commit 0859c200b07cfc24d25da62c8ace45ad3335bd99
+Merge: 491f3f8 5c825de
+Author: thurendous <thurendous2@gmail.com>
+Date:   Wed Mar 31 12:46:23 2021 +0900
+
+    Merge branch 'master' of https://github.com/thurendous/IvanontechLessons
+
+commit 491f3f8e996c48ca5d07781989b8fbdf1bb2431f
+Author: thurendous <thurendous2@gmail.com>
+Date:   Wed Mar 31 12:46:09 2021 +0900
+
+    new
+
+commit 5c825deb9213857e67a07570f70cba92279824ea
+Author: Mark Wu <thurendous@gmail.com>
+Date:   Mon Mar 8 11:24:36 2021 +0900
+
+    Create README.md
+
+commit aa417d6d0d36892b33255fac1c8869635eb79890
+Author: Mark Wu <thurendous@gmail.com>
+Date:   Mon Mar 8 11:23:33 2021 +0900
+
+    Update readme.md
+
+commit b1ffc94015f97d5ce953b8a86891cfe7aa5b1b94
+Author: thurendous <thurendous2@gmail.com>
+Date:   Sun Mar 7 23:24:49 2021 +0900
+
+    add: side note in the readme
+
+commit c93c06afbd5d141ca56c5daeced639a70db80e91
+Author: thurendous <thurendous2@gmail.com>
+Date:   Sun Mar 7 23:21:41 2021 +0900
+
+    add: break in the if loop to impove gas cost
+
+commit 370a456555237825495c9979b2967d2de3fed1ed
+Author: thurendous <thurendous2@gmail.com>
+Date:   Sun Mar 7 23:18:45 2021 +0900
+
+    finish: multi sig wallet finished now
+
+commit 1578dc3417a625a6baa15d79ca9ffe36ba303b8a
+Author: thurendous <thurendous2@gmail.com>
+Date:   Sun Mar 7 23:18:23 2021 +0900
+
+    finish: the multisig wallet finished
+
+commit edf00d5f8165acec498ab60976fcb0bb378a8137
+Author: thurendous <thurendous2@gmail.com>
+Date:   Sun Mar 7 20:51:18 2021 +0900
+
+    add: new pj
+
+commit 2dd304b01e267d51ff701a24503674e951b14dfb
+Author: thurendous <thurendous2@gmail.com>
+Date:   Sun Mar 7 15:09:59 2021 +0900
+
+    change: some imprivement
+
+commit 1943e99cc75065a07c9e5a30134c73662a72c58c
+Author: thurendous <thurendous2@gmail.com>
+Date:   Sun Mar 7 14:52:20 2021 +0900
+
+    first
